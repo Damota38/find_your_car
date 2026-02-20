@@ -61,7 +61,7 @@ $transmissions = $stmt_trans->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <header>
-        <h1>Find Your Car</h1>
+        <h1>Luxury Auto</h1>
         <form method="GET" action="index.php" class="search-form">
             <div class="form-group">
                 <label for="manufacturer">Fabriquant :</label>
@@ -69,7 +69,7 @@ $transmissions = $stmt_trans->fetchAll(PDO::FETCH_ASSOC);
                 type="text"
                 id="manufacturer"
                 name="manufacturer"
-                placeholder="Ex: Toyota, BMW..."
+                placeholder="Toyota, BMW..."
                 value= "<?php echo($search_manufacturer); ?>"
                 >
             </div>
@@ -80,7 +80,7 @@ $transmissions = $stmt_trans->fetchAll(PDO::FETCH_ASSOC);
                 type="text" 
                 id="model" 
                 name="model" 
-                placeholder="Ex: Corolla, X5..."
+                placeholder="Corolla, X5..."
                  value= "<?php echo($search_model); ?>"
             >
             </div>
@@ -91,7 +91,7 @@ $transmissions = $stmt_trans->fetchAll(PDO::FETCH_ASSOC);
                 type="number" 
                 id="year" 
                 name="year" 
-                placeholder="Ex: 2020" 
+                placeholder="2020" 
                 min="1900" 
                 max="2030"
                 value= "<?php echo($search_year); ?>"
