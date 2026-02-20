@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 
-$dbname = 'bdd-cars';
+$dbname = 'luxury_auto';
 
 $username = 'root';
 
