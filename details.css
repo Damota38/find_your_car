@@ -1,0 +1,199 @@
+      @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+      :root {
+     --background: #171717;
+     --black: #020202;
+     --gold: #BF8836;
+     --beige: #E0BD86;
+     --grey: #838383;
+      }        
+      
+        body {
+        background-color: var(--background);
+        scroll-behavior: smooth;
+        }
+
+        header h1 {
+        display: flex;
+        justify-content: center;
+        font-family: "Birthstone", cursive;
+        color: var(--gold);
+        font-weight: 100;
+        font-size: 90px;
+      }
+           
+           .details-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--black);
+            border: 3px solid var(--gold);
+            border-radius: 10px;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .details-image {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 2px solid var(--gold);
+        }
+        
+        .details-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .details-info {
+            padding: 20px;
+        }
+        
+        .details-info h1 {
+            font-family: "Limelight", sans-serif;
+            color: var(--gold);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .spec-item {
+            background: rgba(191, 136, 54, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid var(--gold);
+        }
+        
+        .spec-label {
+            color: var(--gold);
+            font-family: "Limelight", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .spec-value {
+            color: var(--grey);
+            font-family: "Lexend", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .spec-value small {
+            font-size: 12px;
+            color: var(--beige);
+        }
+        
+        .colors-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(191, 136, 54, 0.05);
+            border-radius: 5px;
+        }
+        
+        .colors-section h3 {
+            color: var(--gold);
+            font-family: "Limelight", sans-serif;
+            margin-bottom: 15px;
+        }
+        
+        .color-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .color-tag {
+            background: var(--gold);
+            color: var(--black);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-family: "Lexend", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .description-section {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid var(--gold);
+        }
+        
+        .description-section h2 {
+            font-family: "Limelight", sans-serif;
+            color: var(--gold);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .description-section p {
+            color: var(--grey);
+            font-family: "Lexend", sans-serif;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        .suggestions {
+            margin-top: 60px;
+        }
+        
+        .suggestions h2 {
+            font-family: "Limelight", sans-serif;
+            color: var(--gold);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .button a {
+        display: flex;
+        justify-content: center;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: var(--gold);
+        color: var(--black);
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Lexend", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        }
+
+        .button a:hover {
+        background-color: var(--black);
+        color: var(--gold);
+        }
+        
+        @media (max-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }

@@ -134,6 +134,7 @@ $transmissions = $stmt_trans->fetchAll(PDO::FETCH_ASSOC);
     <main>
         <div class="container">
             <?php foreach ($cars as $car): ?>
+                <a href= "details.php?id_cars=<?php echo $car['id_cars']; ?>" class="card-link">
                 <div class = "card">
                     <div class="card-image">
                         <?php if (!empty($car['image_url'])): ?>
