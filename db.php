@@ -2,7 +2,7 @@
 
 $host = 'sql306.infinityfree.com';
 
-$dbname = 'if0_41352688_XXX';
+$dbname = 'if0_41352688_luxury_auto';
 
 $username = 'if0_41352688';
 
