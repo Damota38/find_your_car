@@ -1,12 +1,12 @@
 <?php
 
-$host = 'localhost';
+$host = 'sql306.infinityfree.com';
 
-$dbname = 'luxury_auto';
+$dbname = 'if0_41352688_XXX';
 
-$username = 'root';
+$username = 'if0_41352688';
 
-$password = '';
+$password = '02andre03';
 
 try {
 
